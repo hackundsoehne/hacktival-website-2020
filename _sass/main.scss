@@ -1,0 +1,17 @@
+@import "fontawesome/fontawesome";
+@import "fontawesome/brands";
+@import "fontawesome/regular";
+@import "fontawesome/solid";
+
+$theme-colors: (
+	"dark": #1b1f23,
+	"grey": #2F363D,
+	"violet": #b392f0,
+	"blue": #79b8ff,
+	"green": #85e89d,
+	"orange": #ffab70,
+	"red": #f97583,
+	"yellow": #ffea7f
+);
+
+@import "bootstrap/bootstrap";
