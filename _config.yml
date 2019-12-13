@@ -6,5 +6,8 @@ description: >-
 baseurl: ""
 url: ""
 
+main_action_name: Signup
+main_action_link: https://apply.hacktival.io/
+
 sass:
   style: compressed

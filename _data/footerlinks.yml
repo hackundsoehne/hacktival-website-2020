@@ -1,0 +1,12 @@
+- name: Slack
+  link: /
+- name: Team
+  link: /
+- name: Contact
+  link: /
+- name: Code of Conduct
+  link: /
+- name: Legal
+  link: /
+- name: Privacy 
+  link: /

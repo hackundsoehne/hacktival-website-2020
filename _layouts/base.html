@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+</head>
+<body class="d-flex flex-column vh-100 bg-dark text-white">
+
+{% include navbar.html %}
+
+<div class="flex-fill d-flex flex-row position-relative">
+	{% include sidebar.html %}
+	<div class="d-flex flex-fill flex-column">
+		<main class="flex-fill">{{ content }}</main>
+		{% include footer.html %}
+	</div>
+</div>
+
+<script src="/assets/js/jquery-3.4.1.slim.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/sidebar.js"></script>
+</body>
+</html>

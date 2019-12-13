@@ -1,3 +1,3 @@
-$('button[data-toggle="d-flex"]').click(function() {
-	$($(this).attr('data-target')).toggleClass('d-flex');
+$('button[data-toggle="sidebar"]').click(function() {
+	$('#sidebar').toggleClass('d-flex');
 });

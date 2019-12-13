@@ -1,0 +1,12 @@
+<footer class="w-100 border-top border-grey py-2">
+	<ul class="list-inline m-0 px-4">
+		{% for item in site.data.footerlinks %}
+			<li class="list-inline-item small text-monospace">
+				<a class="text-muted" href="{{ item.link }}">{{ item.name }}</a>
+			</li>
+			{% unless forloop.last %}
+				<li class="list-inline-item text-grey">|</li>
+			{% endunless %}
+		{% endfor %}
+	</ul>
+</footer>
