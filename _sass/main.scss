@@ -26,7 +26,7 @@ $theme-colors: (
 	.nav-link {
 		color: theme-color("light");
 
-		&:hover {
+		&.active, &:hover {
 			color: theme-color("green") !important;
 		}
 	}
