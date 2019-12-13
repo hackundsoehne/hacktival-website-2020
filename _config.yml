@@ -5,3 +5,6 @@ description: >-
   Google search results) and in your feed.xml site description.
 baseurl: ""
 url: ""
+
+sass:
+  style: compressed
