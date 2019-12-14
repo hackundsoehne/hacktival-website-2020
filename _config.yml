@@ -24,3 +24,5 @@ color_names:
 
 sass:
   style: compressed
+
+exclude: ["README.md"]
