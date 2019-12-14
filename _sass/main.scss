@@ -14,6 +14,8 @@ $theme-colors: (
 	"yellow": #ffea7f
 );
 
+$link-color: map-get($theme-colors, "green");
+
 @import "bootstrap/bootstrap";
 
 /* Wrapper */
