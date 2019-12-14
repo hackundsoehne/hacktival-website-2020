@@ -1,0 +1,25 @@
+<div class="border-bottom border-grey">
+	<div class="wrapper py-2">
+		<nav class="htv-tablist nav nav-pills" role="tablist">
+			{% for pane in include.panes %}
+
+			{% assign colors_count = site.color_names|size %}
+			{% assign color_index = forloop.index0|modulo: colors_count %}
+			{% assign color_name = site.color_names[color_index] %}
+			
+			<a class="nav-link{% if forloop.first %} active{% endif %} text-{{ color_name }}" id="tab{{ forloop.index }}" data-toggle="tab" href="#{{ pane.name|slugify }}" role="tab" aria-controls="{{ pane.name|slugify }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">{{ pane.name }}</a>
+
+			{% endfor %}
+		</nav>
+	</div>
+</div>
+
+<div class="tab-content">
+	{% for pane in include.panes %}
+
+	<div class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ pane.name|slugify }}" role="tabpanel" aria-labelledby="tab{{ forloop.index }}">
+		<div class="wrapper">{{ pane.content }}</div>
+	</div>
+
+	{% endfor %}
+</div>

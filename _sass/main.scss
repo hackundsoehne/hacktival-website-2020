@@ -54,3 +54,11 @@ $theme-colors: (
 		flex: 0 0 320px;
 	}
 }
+
+/* Tablist */
+
+.htv-tablist {
+	.nav-link.active {
+		background: theme-color("grey");
+	}
+}
