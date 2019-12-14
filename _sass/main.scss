@@ -16,6 +16,22 @@ $theme-colors: (
 
 @import "bootstrap/bootstrap";
 
+/* Wrapper */
+
+.wrapper {
+	@extend .container;
+	margin-left: 0;
+	padding: map-get($spacers, 2) map-get($spacers, 3);
+
+	@include media-breakpoint-up(md) {
+		padding: map-get($spacers, 4);
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding: map-get($spacers, 5);
+	}
+}
+
 /* Sidebar */
 
 #sidebar {
@@ -36,8 +52,5 @@ $theme-colors: (
 	#sidebar {
 		position: relative;
 		flex: 0 0 320px;
-	}
-}
-
 	}
 }
