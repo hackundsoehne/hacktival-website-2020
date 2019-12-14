@@ -35,6 +35,9 @@ $theme-colors: (
 @include media-breakpoint-up(lg) {
 	#sidebar {
 		position: relative;
-		width: 320px;
+		flex: 0 0 320px;
+	}
+}
+
 	}
 }
