@@ -1,0 +1,19 @@
+<div id="map" class="map embed-responsive embed-responsive-21by9 bg-grey"></div>
+
+<link rel="stylesheet" type="text/css" href="/assets/vendor/leaflet/leaflet.css">
+<script src="/assets/vendor/leaflet/leaflet.js"></script>
+<script>
+	var longitude = {{ include.map_longitude | default: 0.0 }};
+	var latitude = {{ include.map_latitude | default: 0.0 }};
+	var coordinates = [longitude, latitude];
+	var map = L.map('map').setView(coordinates, 13);
+
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+    
+	L.marker(coordinates)
+		.addTo(map)
+		.bindPopup('{{ include.map_label | default: Destination }}')
+		.openPopup();
+</script>
