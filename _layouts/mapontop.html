@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+{% if page.heading or page.lead %}
+{% include header.html heading=page.heading lead=page.lead %}
+{% endif %}
+
+<div class="wrapper pb-0">
+	{% include leafleat.html map_longitude=page.map_longitude map_latitude=page.map_latitude map_label=page.map_label %}
+</div>
+
+<div class="wrapper markdown">{{ content }}</div>
