@@ -52,6 +52,7 @@ $table-dark-border-color: map-get($theme-colors, "grey");
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	z-index: $zindex-fixed;
 
 	.nav-link {
 		color: theme-color("light");
