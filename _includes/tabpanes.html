@@ -18,7 +18,7 @@
 	{% for pane in include.panes %}
 
 	<div class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ pane.name|slugify }}" role="tabpanel" aria-labelledby="tab{{ forloop.index }}">
-		<div class="wrapper">{{ pane.content }}</div>
+		<div class="wrapper markdown">{{ pane.content }}</div>
 	</div>
 
 	{% endfor %}

@@ -16,6 +16,9 @@ $theme-colors: (
 
 $link-color: map-get($theme-colors, "green");
 
+$table-dark-bg: map-get($theme-colors, "dark");
+$table-dark-border-color: map-get($theme-colors, "grey");
+
 @import "bootstrap/bootstrap";
 
 /* Wrapper */
@@ -32,6 +35,15 @@ $link-color: map-get($theme-colors, "green");
 	@include media-breakpoint-up(lg) {
 		padding: map-get($spacers, 5);
 	}
+}
+
+/* Markdown */
+
+.markdown table {
+	@extend .table;
+	@extend .table-bordered;
+	@extend .table-striped;
+	@extend .table-dark;
 }
 
 /* Sidebar */

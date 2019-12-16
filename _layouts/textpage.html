@@ -3,12 +3,7 @@ layout: base
 ---
 
 {% if page.heading or page.lead %}
-	<header class="py-3 border-bottom border-grey">
-		<div class="container ml-0 m-lg-5">
-			<h1 class="font-weight-bolder">{{ page.heading }}</h1>
-			<p class="text-monospace">{{ page.lead }}</p>
-		</div>
-	</header>
+{% include header.html heading=page.heading lead=page.lead %}
 {% endif %}
 
-<div class="container ml-0 m-lg-5 py-3">{{ content }}</div>
+<div class="wrapper markdown">{{ content }}</div>
