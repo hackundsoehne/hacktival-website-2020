@@ -11,6 +11,7 @@ main_action_link: https://apply.hacktival.io/
 
 collections:
   - cats
+  - days
 
 # Corresponds to the 'theme-colors' defined in the main.scss file.
 # These colors are used to dynamically color widgets such as the tablist.
