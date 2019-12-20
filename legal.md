@@ -2,6 +2,7 @@
 layout: textpage
 title: Legal
 heading: Legal
+lead: "The terms are only available in German due to German law being difficult to translate. If you have any questions or concerns regarding our terms and conditions, please contact us."
 ---
 
 ### Angaben gemäß § 5 TMG
@@ -19,7 +20,6 @@ E-Mail: info@talkit.eu<br>
 Internet: www.talkit.eu
 
 Anerkannte Hochschulgruppe am Karlsruhe Institut für Technologie (KIT).
-
 Eingetragen im Vereinsregister Mannheim unter der Registernummer VR 103622
 
 
