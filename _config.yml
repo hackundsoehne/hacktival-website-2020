@@ -25,9 +25,16 @@ twitter:
   username: hackundsoehne
   card: summary
 
+# Sidebar main action
 main_action_name: Signup
 main_action_link: https://apply.hacktival.io/
 
+# Sidebar social links
+twitter_action_link: https://twitter.com/hackundsoehne
+facebook_action_link: https://www.facebook.com/hackundsoehne/
+instagram_action_link: https://www.instagram.com/hackundsoehne/
+
+# Jekyll collections
 collections:
   - cats
   - days
