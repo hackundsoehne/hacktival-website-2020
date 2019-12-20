@@ -4,11 +4,26 @@ lang: en_US
 logo: /assets/images/hacktival_cover.jpg
 image: /assets/images/hacktival_cover.jpg
 title: Hacktival Hackathon
+tagline: Germanys largest student-run hackathon
 description: >-
   The Hacktival Hackthon is the largest student-run hackathon in Germany.
   Our goal is to bring people from different fields together to create something awesome.
 author: Hack &amp; Söhne
 google_site_verification: tjukQQpmzsqdbPMnXjNBcrTMyJvr9QDKjFdGEuhEJwM
+
+social:
+  name: Hack und Söhne
+  links:
+    - https://www.facebook.com/hackundsoehne/
+    - https://twitter.com/hackundsoehne
+    - https://www.instagram.com/hackundsoehne/
+    - https://www.linkedin.com/company/hack-&-s%C3%B6hne
+    - https://github.com/hackundsoehne
+    - https://www.youtube.com/channel/UCYchla3LyKoOQSdnEIl4oqQ
+
+twitter:
+  username: hackundsoehne
+  card: summary
 
 main_action_name: Signup
 main_action_link: https://apply.hacktival.io/
