@@ -1,5 +1,5 @@
 <div class="border-bottom border-grey">
-	<div class="wrapper py-2">
+	<div class="dcp-x py-2">
 		<nav class="htv-tablist nav nav-pills" role="tablist">
 			{% for pane in include.panes %}
 
@@ -18,7 +18,7 @@
 	{% for pane in include.panes %}
 
 	<div class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ pane.name|slugify }}" role="tabpanel" aria-labelledby="tab{{ forloop.index }}">
-		<div class="wrapper markdown">{{ pane.content }}</div>
+		<div class="content dcp markdown text-justify">{{ pane.content }}</div>
 	</div>
 
 	{% endfor %}

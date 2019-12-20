@@ -6,8 +6,8 @@ layout: base
 {% include header.html heading=page.heading lead=page.lead %}
 {% endif %}
 
-<div class="wrapper pb-0">
+<div class="content dcp-x dcp-t">
 	{% include leafleat.html map_longitude=page.map_longitude map_latitude=page.map_latitude map_label=page.map_label %}
 </div>
 
-<div class="wrapper markdown">{{ content }}</div>
+<div class="content dcp markdown">{{ content }}</div>

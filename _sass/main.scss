@@ -21,20 +21,41 @@ $table-dark-border-color: map-get($theme-colors, "grey");
 
 @import "bootstrap/bootstrap";
 
-/* Wrapper */
+/* Content and dynamic content padding */
 
-.wrapper {
-	@extend .container;
-	margin-left: 0;
-	padding: map-get($spacers, 2) map-get($spacers, 3);
+.content {
+    max-width: 900px;
+}
 
-	@include media-breakpoint-up(md) {
-		padding: map-get($spacers, 4);
-	}
+$dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 
-	@include media-breakpoint-up(lg) {
-		padding: map-get($spacers, 5);
-	}
+@each $os, $is in $dcp-directions {
+    .dcp-#{$os} {
+        padding-#{$is}: map-get($spacers, 3);
+
+        @include media-breakpoint-up(md) {
+            padding-#{$is}: map-get($spacers, 4);
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-#{$is}: map-get($spacers, 5);
+        }
+    }
+}
+
+.dcp-x {
+    @extend .dcp-l;
+    @extend .dcp-r;
+}
+
+.dcp-y {
+    @extend .dcp-t;
+    @extend .dcp-b;
+}
+
+.dcp {
+    @extend .dcp-x;
+    @extend .dcp-y;
 }
 
 /* Markdown */
