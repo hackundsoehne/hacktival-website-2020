@@ -1,0 +1,12 @@
+{% if include.sponsors.size > 0 %}
+    <div class="content dcp-x dcp-t">
+        <h3>{{ include.title }}</h3>
+        {% for sponsor in include.sponsors %}
+            <div class="sponsorbox">
+                <a target="_blank" rel="noopener" href="{{ sponsor.link }}">
+                    <img class="img-fluid" alt="{{ sponsor.name }} Logo" src="{{ sponsor.logo }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}

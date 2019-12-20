@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+{% include header.html heading='Sponsors' lead='A huge shout out to our generous sponsors and friends who make this event possible! Looking for a sponsor opportunity? Contact info@hackundsoehne.de' %}
+
+{% if site.data.sponsors.size > 0 %}
+    {% assign platinum_sponsors = site.data.sponsors | where:'kind', 'Platinum' %}
+    {% assign premium_sponsors = site.data.sponsors | where:'kind', 'Premium' %}
+    {% assign basic_sponsors = site.data.sponsors | where:'kind', 'Basic' %}
+    {% assign friends = site.data.sponsors | where:'kind', 'Friend' %}
+
+    {% include sponsorboxes.html title='Platinum Sponsor' sponsors=platinum_sponsors %}
+    {% include sponsorboxes.html title='Premium Sponsors' sponsors=premium_sponsors %}
+    {% include sponsorboxes.html title='Basic Sponsors' sponsors=basic_sponsors %}
+    {% include sponsorboxes.html title='Friends' sponsors=friends %}
+
+    <div class="dcp-b"><!-- spacer --></div>
+{% else %}
+    <div class="content dcp">
+        <div class="alert alert-info" role="alert">
+            <span class="lead">Our sponsors have not yet been announced. Stay tuned!</span>
+        </div>
+    </div>
+{% endif %}

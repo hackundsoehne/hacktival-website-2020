@@ -98,3 +98,18 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 		background: theme-color("grey");
 	}
 }
+
+/* Sponsors */
+
+.sponsorbox {
+    @extend .bg-white;
+    @extend .dcp;
+    @extend .mt-5;
+
+    a {
+        @extend .d-block;
+        @extend .mx-auto;
+        @extend .text-center;
+        max-width: 260px;
+    }
+}
