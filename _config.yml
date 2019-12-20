@@ -1,5 +1,5 @@
 baseurl: ""
-url: ""
+url: "https://hacktival.io/"
 lang: en_US
 logo: /assets/images/hacktival_cover.jpg
 image: /assets/images/hacktival_cover.jpg
@@ -29,6 +29,7 @@ color_names:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 sass:
   style: compressed
