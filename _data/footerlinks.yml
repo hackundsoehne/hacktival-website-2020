@@ -1,12 +1,12 @@
 - name: Slack
-  link: /
+  link: https://join.slack.com/t/hs-community/shared_invite/enQtNjMxMTYzNDgwMjQ3LWMyNjY3ZjNlN2ViMGRjYTNmNGU0MmJkZDc0OTkwNmFmNjcwNWViMDM0Nzg0ZDQyODMwMjcxM2UzMGFmMTc2NTk
 - name: Team
-  link: /
+  link: https://hackundsoehne.de/team
 - name: Contact
-  link: /
+  link: https://hackundsoehne.de/contact
 - name: Code of Conduct
-  link: /
+  link: /coc-public.pdf
 - name: Legal
-  link: /
-- name: Privacy 
-  link: /
+  link: /legal.html
+- name: Privacy
+  link: /privacy.html
