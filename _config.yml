@@ -26,8 +26,10 @@ twitter:
   card: summary
 
 # Sidebar main action
-main_action_name: Signup
-main_action_link: https://apply.hacktival.io/
+#main_action_name: Signup
+#main_action_link: https://apply.hacktival.io/
+main_action_name: Get notified
+main_action_link: http://eepurl.com/cUkPyn
 
 # Sidebar social links
 twitter_action_link: https://twitter.com/hackundsoehne
