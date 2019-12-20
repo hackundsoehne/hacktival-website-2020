@@ -1,0 +1,44 @@
+- name: CAS Software
+  kind: Platinum
+  logo: /assets/images/sponsors/CAS/CAS-Logo-Web-kleine-Aufl%C3%B6sung.jpg
+  link: https://www.cas.de/
+- name: BFK
+  kind: Premium
+  logo: /assets/images/sponsors/BFK/bfk.png
+  link: https://www.bfk.de/
+- name: Razorcat
+  kind: Premium
+  logo: /assets/images/sponsors/Razorcat/RAZORCAT_Logo_RGB_500x158.png
+  link: https://www.razorcat.com/
+- name: JamitLabs
+  kind: Premium
+  logo: /assets/images/sponsors/JamitLabs/Jamit%20Labs-Logo-Druck.png
+  link: https://jamitlabs.com/
+- name: SEW Eurodrive
+  kind: Basic
+  logo: /assets/images/sponsors/SEW/SEW-CMYK.JPG
+  link: https://www.sew-eurodrive.de/
+- name: CyberLab
+  kind: Friend
+  logo: /assets/images/sponsors/CyberLab/CyberLab.svg
+  link: https://www.cyberlab-karlsruhe.de/
+- name: Fokus Energie
+  kind: Friend
+  logo: /assets/images/sponsors/FokusEnergie/logo_fokus_energie_slogan_rgb_gross.png
+  link: https://www.fokusenergie.net/
+- name: Plexilaser
+  kind: Friend
+  logo: /assets/images/sponsors/Plexilaser/plexilaser-logo.svg
+  link: https://www.plexilaser.de/
+- name: Pioniergarage
+  kind: Friend
+  logo: /assets/images/sponsors/PionierGarage/LogoMitName.png
+  link: https://www.pioniergarage.de/
+- name: EIFER
+  kind: Friend
+  logo: /assets/images/sponsors/EIFER/EIFER_logo.jpg
+  link: https://www.eifer.kit.edu/
+- name: TWT GmbH
+  kind: Friend
+  logo: /assets/images/sponsors/TWT/TWT Logo.jpg
+  link: https://www.twt-gmbh.de/
