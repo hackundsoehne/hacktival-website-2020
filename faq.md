@@ -1,5 +1,6 @@
 ---
 layout: textpage
+title: FAQ
 heading: Frequently asked questions
 lead: Got questions? We have answers for you. If you can’t find what you’re looking for, send an email to info@hackundsoehne.de
 ---

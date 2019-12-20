@@ -1,10 +1,14 @@
-title: Hacktival
-description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: ""
 url: ""
+lang: en_US
+logo: /assets/images/hacktival_cover.jpg
+image: /assets/images/hacktival_cover.jpg
+title: Hacktival Hackathon
+description: >-
+  The Hacktival Hackthon is the largest student-run hackathon in Germany.
+  Our goal is to bring people from different fields together to create something awesome.
+author: Hack &amp; Söhne
+google_site_verification: tjukQQpmzsqdbPMnXjNBcrTMyJvr9QDKjFdGEuhEJwM
 
 main_action_name: Signup
 main_action_link: https://apply.hacktival.io/
@@ -22,6 +26,9 @@ color_names:
   - orange
   - red
   - yellow
+
+plugins:
+  - jekyll-seo-tag
 
 sass:
   style: compressed
