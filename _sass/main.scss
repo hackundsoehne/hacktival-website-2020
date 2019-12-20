@@ -21,6 +21,16 @@ $table-dark-border-color: map-get($theme-colors, "grey");
 
 @import "bootstrap/bootstrap";
 
+/* Rulers */
+
+hr {
+    height: 0.5em;
+    width: 2em;
+    background-color: white;
+    display: inline-block;
+    border: none;
+}
+
 /* Content and dynamic content padding */
 
 .content {
