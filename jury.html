@@ -26,11 +26,5 @@ title: Jury
 
 {% endfor %}
 {% else %}
-
-<div class="content dcp">
-	<div class="alert alert-info" role="alert">
-		<span class="lead">The jury has not yet been announced. Stay tuned!</span>
-	</div>
-</div>
-
+{% include comingsoon.html text="The jury has not yet been announced. Stay tuned!" %}
 {% endif %}

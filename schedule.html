@@ -11,11 +11,5 @@ title: Location
 {% if released_days_count > 0 %}
 {% include tabpanes.html panes=released_days %}
 {% else %}
-
-<div class="content dcp">
-	<div class="alert alert-info" role="alert">
-		<span class="lead">The schedule has not yet been released. Stay tuned!</span>
-	</div>
-</div>
-
+{% include comingsoon.html text="The schedule has not yet been announced. Stay tuned!" %}
 {% endif %}
