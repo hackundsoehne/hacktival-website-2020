@@ -11,30 +11,34 @@ description: >-
 author: Hack &amp; Söhne
 google_site_verification: tjukQQpmzsqdbPMnXjNBcrTMyJvr9QDKjFdGEuhEJwM
 
+# Reusable links (using YAML anchors)
+facebook_link: &facebook_link https://www.facebook.com/hackundsoehne/
+twitter_link: &twitter_link https://twitter.com/hackundsoehne
+instagram_link: &instagram_link https://www.instagram.com/hackundsoehne/
+linkedin_link: &linkedin_link https://www.linkedin.com/company/hack-&-s%C3%B6hne
+github_link: &github_link https://github.com/hackundsoehne
+youtube_link: &youtube_link https://www.youtube.com/channel/UCYchla3LyKoOQSdnEIl4oqQ
+newsletter_link: &newsletter_link http://eepurl.com/cUkPyn
+apply_link: &apply_link https://apply.hacktival.io/
+
+# Social media SEO (read jekyll-seo-tag plugin usage)
 social:
   name: Hack und Söhne
   links:
-    - https://www.facebook.com/hackundsoehne/
-    - https://twitter.com/hackundsoehne
-    - https://www.instagram.com/hackundsoehne/
-    - https://www.linkedin.com/company/hack-&-s%C3%B6hne
-    - https://github.com/hackundsoehne
-    - https://www.youtube.com/channel/UCYchla3LyKoOQSdnEIl4oqQ
+    - *facebook_link
+    - *twitter_link
+    - *instagram_link
+    - *linkedin_link
+    - *github_link
+    - *youtube_link
 
 twitter:
   username: hackundsoehne
   card: summary
 
 # Sidebar main action
-#main_action_name: Signup
-#main_action_link: https://apply.hacktival.io/
 main_action_name: Get notified
-main_action_link: http://eepurl.com/cUkPyn
-
-# Sidebar social links
-twitter_action_link: https://twitter.com/hackundsoehne
-facebook_action_link: https://www.facebook.com/hackundsoehne/
-instagram_action_link: https://www.instagram.com/hackundsoehne/
+main_action_link: *newsletter_link
 
 # Jekyll collections
 collections:
