@@ -13,10 +13,10 @@ title: Jury
 <section class="{% unless forloop.last %} border-bottom border-grey{% endunless %}">
     <div class="content dcp">
         <div class="row">
-            <div class="col-3">
+            <div class="col-12 col-md-3 mb-4 text-center">
                 <img class="img-fluid" src="{{ jury.image }}" alt="{{ jury.name }}">
             </div>
-            <div class="col-9 markdown text-justify">
+            <div class="col-12 col-md-9 markdown text-justify">
                 <h3>{{ jury.name }}</h3>
                 {{ jury.content }}
             </div>
