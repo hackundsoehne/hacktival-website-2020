@@ -114,7 +114,6 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 .sponsorbox {
     @extend .bg-white;
     @extend .dcp;
-    @extend .mt-5;
 
     a {
         @extend .d-block;
