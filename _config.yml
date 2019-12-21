@@ -40,6 +40,7 @@ instagram_action_link: https://www.instagram.com/hackundsoehne/
 collections:
   - cats
   - days
+  - jury
 
 # Corresponds to the 'theme-colors' defined in the main.scss file.
 # These colors are used to dynamically color widgets such as the tablist.

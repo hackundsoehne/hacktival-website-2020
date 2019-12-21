@@ -1,0 +1,36 @@
+---
+layout: base
+title: Jury
+---
+
+{% include header.html heading='Jury' %}
+
+{% assign released_jury = site.jury | where: "draft", false %}
+
+{% if released_jury.size > 0 %}
+{% for jury in released_jury %}
+
+<section class="{% unless forloop.last %} border-bottom border-grey{% endunless %}">
+    <div class="content dcp">
+        <div class="row">
+            <div class="col-3">
+                <img class="img-fluid" src="{{ jury.image }}" alt="{{ jury.name }}">
+            </div>
+            <div class="col-9 markdown text-justify">
+                <h3>{{ jury.name }}</h3>
+                {{ jury.content }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endfor %}
+{% else %}
+
+<div class="content dcp">
+	<div class="alert alert-info" role="alert">
+		<span class="lead">The jury has not yet been announced. Stay tuned!</span>
+	</div>
+</div>
+
+{% endif %}
