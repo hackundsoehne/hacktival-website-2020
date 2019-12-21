@@ -74,7 +74,9 @@ hr {
 /* Content and dynamic content padding */
 
 .content {
-    max-width: 900px;
+    @include media-breakpoint-up(lg) {
+        max-width: 900px;
+    }
 }
 
 $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
