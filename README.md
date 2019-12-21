@@ -28,3 +28,9 @@ Our SEO tags are managed by the `jekyll-seo-tag` plugin. Check out their [Github
 - Categories are located in `_cats/`
 - Categories marked with `draft: false` are rendered by `categories.html`
 - Prefix catergories with a number to order them. (thats for simplicity).
+
+### Jury
+
+- Jury members are located in `_jury/`
+- Jury members marked with `draft: false` are rendered by `jury.html`
+- Prefix jury members with a number to order them. (thats for simplicity).
