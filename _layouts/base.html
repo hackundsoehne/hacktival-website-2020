@@ -9,16 +9,14 @@ layout: compress
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
     {% seo %}
 </head>
-<body class="d-flex flex-column vh-100 bg-dark text-white">
+<body class="bg-dark text-white">
 
 {% include navbar.html %}
+{% include sidebar.html %}
 
-<div class="flex-fill d-flex flex-row position-relative">
-	{% include sidebar.html %}
-	<div class="d-flex flex-fill flex-column">
-		<main class="flex-fill">{{ content }}</main>
-		{% include footer.html %}
-	</div>
+<div id="wrapper" class="min-vh-100 d-flex flex-column">
+    <main class="flex-fill">{{ content }}</main>
+    {% include footer.html %}
 </div>
 
 <script src="/assets/js/jquery-3.4.1.slim.min.js"></script>
