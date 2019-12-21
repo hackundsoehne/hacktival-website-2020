@@ -6,9 +6,8 @@ title: Location
 {% include header.html heading="Schedule" lead="A category is about solving a particular problem or challenge. Each category has its own prizes and judging criteria. Hackers may participate in one or more categories." %}
 
 {% assign released_days = site.days | where: "draft", false %}
-{% assign released_days_count = released_days | size %}
 
-{% if released_days_count > 0 %}
+{% if released_days.size > 0 %}
 {% include tabpanes.html panes=released_days %}
 {% else %}
 {% include comingsoon.html text="The schedule has not yet been announced. Stay tuned!" %}

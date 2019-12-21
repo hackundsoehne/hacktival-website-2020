@@ -6,9 +6,8 @@ title: Categories
 {% include header.html heading="Categories" lead="A category is about solving a particular problem or challenge. Each category has its own prizes and judging criteria. Hackers may participate in one or more categories." %}
 
 {% assign released_cats = site.cats | where: "draft", false %}
-{% assign released_cats_count = released_cats | size %}
 
-{% if released_cats_count > 0 %}
+{% if released_cats.size > 0 %}
 {% include tabpanes.html panes=released_cats %}
 {% else %}
 {% include comingsoon.html text="The categories have not yet been announced. Stay tuned!" %}
