@@ -2,7 +2,7 @@
 layout: mapontop
 title: Location
 heading: Location
-lead: "The hackathon is held in the ZKM museum. The ZKM is a locally known media museum."
+lead: "The hackathon is held in the ZKM museum. The ZKM is a worldwide unique cultural institution featuring manifold exhibitions and events about media art."
 map_longitude: 49.001667
 map_latitude: 8.383739
 map_label: "Our Venue: The ZKM"
