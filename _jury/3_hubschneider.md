@@ -2,7 +2,7 @@
 name: Martin Hubschneider
 area: CEO of CAS
 image: /assets/images/jury/hubschneider.jpg
-draft: false
+draft: true
 ---
 
 An entrepreneur by nature, recognized by many for his passion and visionary approach to Customer Relationship Management (CRM), Martin Hubschneider, CEO of CAS Software, has consistently driven the development of networked future technologies.

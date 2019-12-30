@@ -2,7 +2,7 @@
 name: Bernhard Janke
 area: Principal at LEA Partners
 image: /assets/images/jury/janke.jpg
-draft: false
+draft: true
 ---
 
 Bernhard is a Principal at LEA Partners where he invests in B2B companies from seed to growth. 

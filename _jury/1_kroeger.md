@@ -2,7 +2,7 @@
 name: Prof. Dr.-Ing. Torsten Kroeger
 area: Professor, Director, Founder
 image: /assets/images/jury/kroeger.jpg
-draft: false
+draft: true
 ---
 
 Torsten is a Professor of Computer Science, Director of Intelligent Process Control and Robotics Laboratory (IPR) and Co-Chair of the Institute for Anthropomatics and Robotics (IAR) at Karlsruhe Institute of Technology (KIT).

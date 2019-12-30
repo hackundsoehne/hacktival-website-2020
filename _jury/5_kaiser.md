@@ -2,7 +2,7 @@
 name: Alexander Kaiser
 area: Co-Founder of First Momentum Ventures
 image: /assets/images/jury/kaiser.jpg
-draft: false
+draft: true
 ---
 
 Alexander is co-founder of First Momentum Ventures and Blockinfinity.
