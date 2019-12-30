@@ -1,9 +1,11 @@
 - name: Home
   link: /
-- name: Jury
-  link: /jury.html
+- name: About
+  link: /about.html
 - name: Categories
   link: /categories.html
+- name: Jury
+  link: /jury.html
 - name: Schedule
   link: /schedule.html
 - name: Location
