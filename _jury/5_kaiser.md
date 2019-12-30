@@ -1,5 +1,6 @@
 ---
 name: Alexander Kaiser
+area: Co-Founder of First Momentum Ventures
 image: /assets/images/jury/kaiser.jpg
 draft: false
 ---

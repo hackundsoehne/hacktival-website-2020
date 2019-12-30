@@ -1,5 +1,6 @@
 ---
 name: Martin Hubschneider
+area: CEO of CAS
 image: /assets/images/jury/hubschneider.jpg
 draft: false
 ---

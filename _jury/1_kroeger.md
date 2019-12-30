@@ -1,5 +1,6 @@
 ---
 name: Prof. Dr.-Ing. Torsten Kroeger
+area: Professor, Director, Founder
 image: /assets/images/jury/kroeger.jpg
 draft: false
 ---

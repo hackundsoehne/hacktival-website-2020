@@ -1,5 +1,6 @@
 ---
 name: Prof. Dr. Alexander Waibel
+area: Professor, Director, Founder
 image: /assets/images/jury/waibel.jpg
 draft: false
 ---

@@ -1,5 +1,6 @@
 ---
 name: Bernhard Janke
+area: Principal at LEA Partners
 image: /assets/images/jury/janke.jpg
 draft: false
 ---
