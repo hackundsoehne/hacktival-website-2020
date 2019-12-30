@@ -1,6 +1,6 @@
 ---
 name: "LIDAR Challenge"
-draft: false
+draft: true
 ---
 Target group: Geoinformaticians, Data Scientists, Architects, Designers, all
 

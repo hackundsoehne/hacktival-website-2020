@@ -1,6 +1,6 @@
 ---
 name: "Art-Installation Noise"
-draft: false
+draft: true
 ---
 by Nino Alonso (HfG Karlsruhe), Leander Kurscheidt (ML-KA)
 

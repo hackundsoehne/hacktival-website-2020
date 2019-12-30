@@ -1,6 +1,6 @@
 ---
 name: "The Entrepreneurial Spirit"
-draft: false
+draft: true
 ---
 
 ### Topic

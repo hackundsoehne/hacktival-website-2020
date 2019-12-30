@@ -1,6 +1,6 @@
 ---
 name: "Humanity meets Code"
-draft: false
+draft: true
 ---
 ### Topic
 
