@@ -59,7 +59,7 @@ The event is hosted at the ZKM in Karlsruhe, Germany. Tram line 2 brings you fro
 
 Try it! People are super friendly, and no, you do not have to be an expert to participate. We have tons of mentors and helpers ready to help you, so please come over!
 
-Watch the official [OpenCodes Hackathon 2018 Aftermovie](https://www.youtube.com/watch?v=-a3AVD9Izk0) and take a look at the [galery](https://www.flickr.com/photos/hackundsoehne/sets/72157692350508402/) to get an impression. There is also this awesome video about the [Hacktival 2019](https://www.youtube.com/watch?v=ZlABqH9f7mA).
+Watch the official [OpenCodes Hackathon 2018 Aftermovie](https://www.youtube.com/watch?v=-a3AVD9Izk0) and take a look at the [gallery](https://www.flickr.com/photos/hackundsoehne/sets/72157692350508402/) to get an impression. There is also this awesome video about the [Hacktival 2019](https://www.youtube.com/watch?v=ZlABqH9f7mA).
 
 <br>
 
