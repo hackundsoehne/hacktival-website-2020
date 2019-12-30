@@ -119,6 +119,11 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 	@extend .table-dark;
 }
 
+.markdown img[src*="#responsive"] {
+    @extend .img-fluid;
+    @extend .mt-2;
+}
+
 /* Tablist */
 
 .htv-tablist {
