@@ -1,6 +1,6 @@
 ---
 name: Sunday
-draft: false
+draft: true
 ---
 
 | Time          | Description                        |
