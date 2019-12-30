@@ -3,28 +3,47 @@ layout: base
 title: Jury
 ---
 
-{% include header.html heading='Jury' %}
+{% include header.html heading="Jury" lead="Our jury consists of professionals from various fields. Convince them with your project to win prizes." %}
 
 {% assign released_jury = site.jury | where: "draft", false %}
-
 {% if released_jury.size > 0 %}
-{% for jury in released_jury %}
 
-<section class="{% unless forloop.last %} border-bottom border-grey{% endunless %}">
-    <div class="content dcp">
-        <div class="row">
-            <div class="col-12 col-md-3 mb-4 text-center">
-                <img class="img-fluid" src="{{ jury.image }}" alt="{{ jury.name }}">
+<div class="content">
+    <div class="row" style="margin-bottom: -1px">
+        {% for jury in released_jury %}
+            <div class="col-12 col-md-6 border-grey border-right border-bottom p-5 text-center" data-toggle="modal" data-target="#jury-modal-{{ forloop.index }}">
+                <div class="mb-5 mx-auto">
+                    {% include avatar.html src=jury.image alt=jury.name %}
+                </div>
+                <p class="lead mb-0">{{ jury.name }}</p>
+                <p class="text-muted mb-0">{{ jury.area }}</p>
             </div>
-            <div class="col-12 col-md-9 markdown text-justify">
-                <h3>{{ jury.name }}</h3>
-                {{ jury.content }}
+
+            <div class="modal fade text-body" id="jury-modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="jury-modal-label-{{ forloop.index }}" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="jury-modal-label-{{ forloop.index }}">{{ jury.name }}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="p-5 text-center">
+                                {% include avatar.html src=jury.image alt=jury.name %}
+                            </div>
+                            {{ jury.content }}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        {% endfor %}
     </div>
-</section>
+</div>
 
-{% endfor %}
 {% else %}
 {% include comingsoon.html text="The jury has not yet been announced. Stay tuned!" %}
 {% endif %}
