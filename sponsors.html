@@ -4,12 +4,13 @@ title: Sponsors
 ---
 
 {% include header.html heading='Sponsors' lead='A huge shout out to our generous sponsors and friends who make this event possible! Looking for a sponsor opportunity? Contact info@hackundsoehne.de' %}
+{% assign shown_sponsors = site.data.sponsors | where: "show", true %}
 
-{% if site.data.sponsors.size > 0 %}
-    {% assign platinum_sponsors = site.data.sponsors | where:'kind', 'Platinum' %}
-    {% assign premium_sponsors = site.data.sponsors | where:'kind', 'Premium' %}
-    {% assign basic_sponsors = site.data.sponsors | where:'kind', 'Basic' %}
-    {% assign friends = site.data.sponsors | where:'kind', 'Friend' %}
+{% if shown_sponsors.size > 0 %}
+    {% assign platinum_sponsors = shown_sponsors | where:'kind', 'Platinum' %}
+    {% assign premium_sponsors = shown_sponsors | where:'kind', 'Premium' %}
+    {% assign basic_sponsors = shown_sponsors | where:'kind', 'Basic' %}
+    {% assign friends = shown_sponsors | where:'kind', 'Friend' %}
 
     {% include sponsorboxes.html title='Platinum Sponsor' sponsors=platinum_sponsors %}
     {% include sponsorboxes.html title='Premium Sponsors' sponsors=premium_sponsors %}
