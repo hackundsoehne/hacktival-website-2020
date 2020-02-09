@@ -3,8 +3,19 @@
 @import "fontawesome/regular";
 @import "fontawesome/solid";
 
+@font-face {
+    font-family: "ocr-a-std";
+    src:
+      url("/assets/webfonts/ocr-a-std.woff2") format("woff2"),
+      url("/assets/webfonts/ocr-a-std.woff") format("woff"),
+      url("/assets/webfonts/ocr-a-std.otf") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
 $theme-colors: (
-    "primary": #ffff00,
+    "primary": #ffff33,
 	"dark": #202020,
 	"grey": #2F363D,
 	"violet": #b392f0,
@@ -21,6 +32,10 @@ $table-dark-bg: map-get($theme-colors, "dark");
 $table-dark-border-color: map-get($theme-colors, "grey");
 
 @import "bootstrap/bootstrap";
+
+body {
+    font-family: monospace;
+}
 
 /* Shell */
 
@@ -45,6 +60,16 @@ $sidebar-width: 320px;
     }
 }
 
+#sidebar .page-logo {
+    font-family: "ocr-a-std";
+    font-size: 2.5em;
+    color: white;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 #sidebar .nav-link {
     color: theme-color("light");
 
@@ -63,10 +88,6 @@ $sidebar-width: 320px;
 }
 
 /* Rulers */
-
-body {
-    font-family: monospace;
-}
 
 hr {
     left: 0;
