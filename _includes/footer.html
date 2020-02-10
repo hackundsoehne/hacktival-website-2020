@@ -2,10 +2,10 @@
 	<ul class="list-inline m-0 px-4">
 		{% for item in site.data.footerlinks %}
 			<li class="list-inline-item small text-monospace">
-				<a class="text-muted" href="{{ item.link }}">{{ item.name }}</a>
+				<a href="{{ item.link }}">{{ item.name }}</a>
 			</li>
 			{% unless forloop.last %}
-				<li class="list-inline-item text-grey">|</li>
+				<li class="list-inline-item text-black">|</li>
 			{% endunless %}
 		{% endfor %}
 	</ul>

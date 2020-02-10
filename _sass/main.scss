@@ -3,23 +3,41 @@
 @import "fontawesome/regular";
 @import "fontawesome/solid";
 
+@font-face {
+    font-family: "ocr-a-std";
+    src:
+      url("/assets/webfonts/ocr-a-std.woff2") format("woff2"),
+      url("/assets/webfonts/ocr-a-std.woff") format("woff"),
+      url("/assets/webfonts/ocr-a-std.otf") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
 $theme-colors: (
-	"dark": #1b1f23,
-	"grey": #2F363D,
+    "primary": #202020,
+	"dark": #ffff33,
+	"grey": #202020,
 	"violet": #b392f0,
 	"blue": #79b8ff,
 	"green": #85e89d,
 	"orange": #ffab70,
 	"red": #f97583,
-	"yellow": #ffea7f
+	"yellow": #202020
 );
 
-$link-color: map-get($theme-colors, "green");
+$link-color: map-get($theme-colors, "yellow");
 
 $table-dark-bg: map-get($theme-colors, "dark");
 $table-dark-border-color: map-get($theme-colors, "grey");
 
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{map-get($map: $theme-colors, $key: 'grey')}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+
 @import "bootstrap/bootstrap";
+
+body {
+    font-family: monospace;
+}
 
 /* Shell */
 
@@ -29,6 +47,18 @@ $sidebar-width: 320px;
 #navbar {
     height: $navbar-height;
 }
+
+.navbar-light {
+    .navbar-toggler {
+        color: map-get($theme-colors, "grey");
+        border-color: map-get($map: $theme-colors, $key: "grey");
+    }
+
+    .navbar-toggler-icon {
+        background-image: escape-svg($navbar-light-toggler-icon-bg)
+    }
+}
+
 
 #sidebar {
 	z-index: $zindex-fixed;
@@ -44,11 +74,22 @@ $sidebar-width: 320px;
     }
 }
 
+#sidebar .page-logo {
+    font-family: "ocr-a-std";
+    font-size: 2.5em;
+    color: map-get($map: $theme-colors, $key: 'primary');
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 #sidebar .nav-link {
-    color: theme-color("light");
+    color: theme-color("primary");
 
     &.active, &:hover {
-        color: theme-color("green") !important;
+        // color: theme-color("yellow") !important;
+        text-decoration: underline;
     }
 }
 
@@ -61,12 +102,17 @@ $sidebar-width: 320px;
     }
 }
 
+.btn-outline-primary:hover {
+    color: map-get($map: $theme-colors, $key: 'dark')
+}
+
 /* Rulers */
 
 hr {
+    left: 0;
     height: 0.5em;
     width: 2em;
-    background-color: white;
+    background-color: black;
     display: inline-block;
     border: none;
 }
@@ -78,6 +124,40 @@ hr {
         max-width: 900px;
     }
 }
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero__cursor {
+    width: 0.5em;
+    height: 0.125em;
+    display: inline-block;
+}
+
+.hero__cursor .c-beep {
+    width: 100%;
+    height: 0.125em;
+    background: map-get($map: $theme-colors, $key: 'primary');
+    display: block;
+    transition: 100ms all;
+    animation-name: blink-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1 }
+    25% { opacity: 1 }
+    50% { opacity: 0 }
+    75% { opacity: 1 }
+}
+
+
 
 $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 
@@ -143,5 +223,12 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
         @extend .mx-auto;
         @extend .text-center;
         max-width: 260px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hero {
+        display: default;
+        height: auto;
     }
 }
