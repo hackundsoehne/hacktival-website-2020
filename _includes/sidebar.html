@@ -3,7 +3,7 @@
 		<div class="page-logo">HACKTIVAL</div>
 	</a>
 
-	<ol class="flex-column my-4 ml-3 mr-1 text-monospace text-muted">
+	<ol class="flex-column my-4 ml-3 mr-1 text-monospace text-black">
 		{% for item in site.data.navigation %}
 			<li class="nav-item">
 				<a class="nav-link{% if page.url == item.link %} active{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
@@ -14,13 +14,13 @@
 	<a class="bg-primary text-dark text-center text-decoration-none text-monospace font-weight-bold d-block px-4 py-3 lead" target="_blank" href="{{ site.main_action_link }}">{{ site.main_action_name }}</a>
 	
 	<div class="mt-auto d-flex flex-row border-top border-grey text-center">
-		<a class="flex-fill px-4 py-2 text-muted border-right border-grey" target="_blank" href="{{ site.twitter_link }}">
+		<a class="flex-fill px-4 py-2 text-black border-right border-grey" target="_blank" href="{{ site.twitter_link }}">
 			<i class="fab fa-twitter"></i>
 		</a>
-		<a class="flex-fill px-4 py-2 text-muted border-right border-grey" target="_blank" href="{{ site.facebook_link }}">
+		<a class="flex-fill px-4 py-2 text-black border-right border-grey" target="_blank" href="{{ site.facebook_link }}">
 			<i class="fab fa-facebook-f"></i>
 		</a>
-		<a class="flex-fill px-4 py-2 text-muted" target="_blank" href="{{ site.instagram_link }}">
+		<a class="flex-fill px-4 py-2 text-black" target="_blank" href="{{ site.instagram_link }}">
 			<i class="fab fa-instagram"></i>
 		</a>
 	</div>
