@@ -171,8 +171,12 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 .markdown table {
 	@extend .table;
 	@extend .table-bordered;
-	@extend .table-striped;
-	@extend .table-dark;
+	@extend .table-light;
+    background: transparent;
+
+    th, td {
+        border-color: theme-color("dark") !important;
+    }
 }
 
 .markdown img[src*="#responsive"] {
@@ -184,7 +188,8 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 
 .htv-tablist {
 	.nav-link.active {
-		background: theme-color("grey");
+		background: theme-color("dark");
+        color: theme-color("primary") !important;
 	}
 }
 

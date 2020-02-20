@@ -3,11 +3,7 @@
 		<nav class="htv-tablist nav nav-pills" role="tablist">
 			{% for pane in include.panes %}
 
-			{% assign colors_count = site.color_names|size %}
-			{% assign color_index = forloop.index0|modulo: colors_count %}
-			{% assign color_name = site.color_names[color_index] %}
-			
-			<a class="nav-link{% if forloop.first %} active{% endif %} text-{{ color_name }}" id="tab{{ forloop.index }}" data-toggle="tab" href="#{{ pane.name|slugify }}" role="tab" aria-controls="{{ pane.name|slugify }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">{{ pane.name }}</a>
+			<a class="nav-link{% if forloop.first %} active{% endif %} text-dark" id="tab{{ forloop.index }}" data-toggle="tab" href="#{{ pane.name|slugify }}" role="tab" aria-controls="{{ pane.name|slugify }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">{{ pane.name }}</a>
 
 			{% endfor %}
 		</nav>

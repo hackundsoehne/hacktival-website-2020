@@ -46,16 +46,6 @@ collections:
   - days
   - jury
 
-# Corresponds to the 'theme-colors' defined in the main.scss file.
-# These colors are used to dynamically color widgets such as the tablist.
-color_names:
-  - violet
-  - blue
-  - green
-  - orange
-  - red
-  - yellow
-
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
