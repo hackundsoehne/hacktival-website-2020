@@ -5,10 +5,12 @@ image: /assets/images/jury/waibel.jpg
 draft: false
 ---
 
-Alexander is co-founder of First Momentum Ventures and Blockinfinity.
+Alexander Waibel is a Professor of Computer Science at Carnegie Mellon University, Pittsburgh and at the Karlsruhe Institute of Technology, Germany.
 
-As the first student venture capital fund in Germany, First Momentum Ventures closes the existing financing gap in the early phase. The aim is to identify the next generation of founders, to meet them at eye level and to support them in their endeavour by providing access to capital, know-how and relevant partners.
+He is the director of the International Center for Advanced Communication Technologies (interACT) and Fellow of the IEEE Fellow. He and his team invented the “Time-Delay Neural Network” (now also known as “convolutional” neural network) which is at the heart of many of today’s AI technologies.
 
-At Blockinfinity, he implements blockchain-based solutions for various customers, from conception to implementation. By working for energy suppliers he can contribute thereby to the energy transition.
+System breakthroughs that followed suit included early multimodal dialog interfaces, the first speech translation system in Europe and USA, the first simultaneous lecture interpretation system, and Jibbigo, the first commercial speech translator on a phone.
 
-Alexander himself is enthusiastic about hackathons - both as a participant and organizer.
+During his career, Prof. Waibel founded and built 10 successful companies.
+
+Following the acquisition of Jibbigo by Facebook, Waibel served as founding director of the FB Language Technology Group. He also deployed speech translation technologies in humanitarian and disaster relief missions.
