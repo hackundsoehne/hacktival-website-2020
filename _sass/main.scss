@@ -16,28 +16,24 @@
 
 $theme-colors: (
     "primary": #202020,
-	"dark": #ffff33,
-	"grey": #202020,
-	"violet": #b392f0,
-	"blue": #79b8ff,
-	"green": #85e89d,
-	"orange": #ffab70,
-	"red": #f97583,
-	"yellow": #202020
+    "dark": #ffff33,
+    "grey": #202020,
+    "violet": #b392f0,
+    "blue": #79b8ff,
+    "green": #85e89d,
+    "orange": #ffab70,
+    "red": #f97583,
+    "yellow": #202020
 );
+
+$font-family-base: monospace;
 
 $link-color: map-get($theme-colors, "yellow");
 
 $table-dark-bg: map-get($theme-colors, "dark");
 $table-dark-border-color: map-get($theme-colors, "grey");
 
-$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{map-get($map: $theme-colors, $key: 'grey')}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-
 @import "bootstrap/bootstrap";
-
-body {
-    font-family: monospace;
-}
 
 /* Shell */
 
@@ -46,19 +42,12 @@ $sidebar-width: 320px;
 
 #navbar {
     height: $navbar-height;
-}
 
-.navbar-light {
     .navbar-toggler {
         color: map-get($theme-colors, "grey");
         border-color: map-get($map: $theme-colors, $key: "grey");
     }
-
-    .navbar-toggler-icon {
-        background-image: escape-svg($navbar-light-toggler-icon-bg)
-    }
 }
-
 
 #sidebar {
 	z-index: $zindex-fixed;
@@ -109,7 +98,6 @@ $sidebar-width: 320px;
 /* Rulers */
 
 hr {
-    left: 0;
     height: 0.5em;
     width: 2em;
     background-color: black;
@@ -117,33 +105,11 @@ hr {
     border: none;
 }
 
-/* Content and dynamic content padding */
-
-.content {
-    @include media-breakpoint-up(lg) {
-        max-width: 900px;
-    }
-}
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.hero__cursor {
+.cursor {
     width: 0.5em;
     height: 0.125em;
     display: inline-block;
-}
-
-.hero__cursor .c-beep {
-    width: 100%;
-    height: 0.125em;
     background: map-get($map: $theme-colors, $key: 'primary');
-    display: block;
     transition: 100ms all;
     animation-name: blink-animation;
     animation-duration: 1.5s;
@@ -157,7 +123,23 @@ hr {
     75% { opacity: 1 }
 }
 
+/* Content and dynamic content padding */
 
+.content {
+    @include media-breakpoint-up(lg) {
+        max-width: 900px;
+    }
+}
+
+.hero {
+    @include media-breakpoint-up(md) {
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: start;
+    }
+}
 
 $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 
@@ -223,12 +205,5 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
         @extend .mx-auto;
         @extend .text-center;
         max-width: 260px;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .hero {
-        display: default;
-        height: auto;
     }
 }
