@@ -37,8 +37,8 @@ twitter:
   card: summary
 
 # Sidebar main action
-main_action_name: Get notified
-main_action_link: *newsletter_link
+main_action_name: Apply now
+main_action_link: *apply_link
 
 # Jekyll collections
 collections:
