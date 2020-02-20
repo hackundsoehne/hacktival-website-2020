@@ -65,7 +65,7 @@ $sidebar-width: 320px;
 #sidebar .page-logo {
     font-family: "ocr-a-std";
     font-size: 2.5em;
-    color: map-get($map: $theme-colors, $key: "dark");
+    color: map-get($map: $theme-colors, $key: "primary");
 
     &:hover {
         text-decoration: none;
@@ -73,7 +73,7 @@ $sidebar-width: 320px;
 }
 
 #sidebar .nav-link {
-    color: theme-color("dark");
+    color: theme-color("primary");
 
     &.active, &:hover {
         text-decoration: underline;
