@@ -19,8 +19,8 @@ title: Jury
                 <p class="text-muted mb-0">{{ jury.area }}</p>
             </div>
 
-            <div class="modal fade text-body" id="jury-modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="jury-modal-label-{{ forloop.index }}" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal fade text-body text-center" id="jury-modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="jury-modal-label-{{ forloop.index }}" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="jury-modal-label-{{ forloop.index }}">{{ jury.name }}</h5>
@@ -35,7 +35,7 @@ title: Jury
                             {{ jury.content }}
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
