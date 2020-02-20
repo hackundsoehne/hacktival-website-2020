@@ -15,22 +15,21 @@
 }
 
 $theme-colors: (
-    "primary": #202020,
-    "dark": #ffff33,
-    "grey": #202020,
+    "primary": #ffff33,
+    "dark": #202020,
+    "grey": #2F363D,
     "violet": #b392f0,
     "blue": #79b8ff,
     "green": #85e89d,
     "orange": #ffab70,
-    "red": #f97583,
-    "yellow": #202020
+    "red": #f97583
 );
 
 $font-family-base: monospace;
 
-$link-color: map-get($theme-colors, "yellow");
+$link-color: map-get($theme-colors, "dark");
 
-$table-dark-bg: map-get($theme-colors, "dark");
+$table-dark-bg: map-get($theme-colors, "primary");
 $table-dark-border-color: map-get($theme-colors, "grey");
 
 @import "bootstrap/bootstrap";
@@ -66,7 +65,7 @@ $sidebar-width: 320px;
 #sidebar .page-logo {
     font-family: "ocr-a-std";
     font-size: 2.5em;
-    color: map-get($map: $theme-colors, $key: 'primary');
+    color: map-get($map: $theme-colors, $key: "dark");
 
     &:hover {
         text-decoration: none;
@@ -74,10 +73,9 @@ $sidebar-width: 320px;
 }
 
 #sidebar .nav-link {
-    color: theme-color("primary");
+    color: theme-color("dark");
 
     &.active, &:hover {
-        // color: theme-color("yellow") !important;
         text-decoration: underline;
     }
 }
@@ -89,10 +87,6 @@ $sidebar-width: 320px;
         margin-top: 0;
         margin-left: $sidebar-width;
     }
-}
-
-.btn-outline-primary:hover {
-    color: map-get($map: $theme-colors, $key: 'dark')
 }
 
 /* Rulers */
@@ -109,7 +103,7 @@ hr {
     width: 0.5em;
     height: 0.125em;
     display: inline-block;
-    background: map-get($map: $theme-colors, $key: 'primary');
+    background: map-get($map: $theme-colors, $key: "dark");
     transition: 100ms all;
     animation-name: blink-animation;
     animation-duration: 1.5s;
