@@ -1,6 +1,6 @@
 ---
 name: "Hack & Söhne"
-draft: true
+draft: false
 ---
 ### Topic
 
@@ -14,4 +14,4 @@ If you are looking for clear guidelines on what to build, where to look and how 
 
 ### Judging Criteria
 
-Each juror judges the submitted ideas according to their field of expertise. We have artists, developers, entrepreneurs and investors. If your idea can convince the majority of them, you just might win.
+Each juror judges the submitted ideas according to their field of expertise. If your idea can convince the majority of them, you just might win.
