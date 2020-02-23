@@ -125,6 +125,10 @@ hr {
     }
 }
 
+.content a, .header a {
+    text-decoration: underline;
+}
+
 .hero {
     @include media-breakpoint-up(md) {
         min-height: 100vh;
