@@ -172,6 +172,10 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 
 /* Markdown */
 
+.markdown p {
+    @extend .text-justify;
+}
+
 .markdown table {
 	@extend .table;
 	@extend .table-bordered;
