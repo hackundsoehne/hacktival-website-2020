@@ -43,7 +43,7 @@ defaults:
       image:
         path: /assets/images/thumbnail.jpg
         width: 1200
-        height: 628
+        height: 630
 
 
 # Sidebar main action
