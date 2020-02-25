@@ -117,27 +117,7 @@ hr {
     75% { opacity: 1 }
 }
 
-/* Content and dynamic content padding */
-
-.content {
-    @include media-breakpoint-up(lg) {
-        max-width: 900px;
-    }
-}
-
-.markdown.content a, .header a {
-    text-decoration: underline;
-}
-
-.hero {
-    @include media-breakpoint-up(md) {
-        min-height: 100vh;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: start;
-    }
-}
+/* Dynamic content padding */
 
 $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
 
@@ -169,6 +149,35 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
     @extend .dcp-x;
     @extend .dcp-y;
 }
+
+/* Content */
+
+.content {
+    @include media-breakpoint-up(lg) {
+        max-width: 900px;
+    }
+}
+
+.header {
+    @include media-breakpoint-down(lg) {
+        padding-right: 4.5rem;
+    }
+}
+
+.markdown.content a, .header a {
+    text-decoration: underline;
+}
+
+.hero {
+    @include media-breakpoint-up(md) {
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: start;
+    }
+}
+
 
 /* Markdown */
 
@@ -212,5 +221,28 @@ $dcp-directions: ("t": "top", "l": "left", "r": "right", "b": "bottom");
         @extend .mx-auto;
         @extend .text-center;
         max-width: 260px;
+    }
+}
+
+/* MLH Badge */
+#mlh-trust-badge {
+    z-index: $zindex-fixed;
+    max-width: 100px;
+    min-width: 60px;
+    position: fixed;
+    display: block;
+
+    width: 1.5em; // same as nav button width
+    right: 14px;
+    top: $navbar-height;
+    
+    @include media-breakpoint-up(lg) {
+        top: 0;
+    }
+
+    @media (min-width: 1360px) {
+        // content area now at max size, badge can scale and wont conver content any more.
+        right: 50px;
+        width: 10%;
     }
 }

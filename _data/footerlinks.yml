@@ -4,8 +4,10 @@
   link: https://hackundsoehne.de/team
 - name: Contact
   link: https://hackundsoehne.de/contact
-- name: Code of Conduct
+- name: Our CoC
   link: /coc-public.pdf
+- name: MLH CoC
+  link: http://mlh.io/code-of-conduct
 - name: Legal
   link: /legal.html
 - name: Privacy
