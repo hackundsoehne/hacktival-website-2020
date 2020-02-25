@@ -1,7 +1,7 @@
 baseurl: ""
 url: "https://hacktival.io/"
 lang: en_US
-logo: /assets/images/thumbnail.jpg
+logo: /assets/images/thumbnail1.jpg
 title: Hacktival Hackathon
 tagline: Germanys largest student-run hackathon
 description: >-
@@ -41,7 +41,7 @@ defaults:
       path: ""
     values:
       image:
-        path: /assets/images/thumbnail.jpg
+        path: /assets/images/thumbnail1.jpg
         width: 1200
         height: 630
 
