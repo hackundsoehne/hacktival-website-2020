@@ -2,7 +2,6 @@ baseurl: ""
 url: "https://hacktival.io/"
 lang: en_US
 logo: /assets/images/thumbnail.jpg
-image: /assets/images/thumbnail.jpg
 title: Hacktival Hackathon
 tagline: Germanys largest student-run hackathon
 description: >-
@@ -35,6 +34,14 @@ social:
 twitter:
   username: hackundsoehne
   card: summary
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/thumbnail.jpg
+
 
 # Sidebar main action
 main_action_name: Apply now
