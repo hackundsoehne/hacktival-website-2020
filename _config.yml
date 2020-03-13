@@ -47,8 +47,8 @@ defaults:
 
 
 # Sidebar main action
-main_action_name: Apply now
-main_action_link: *apply_link
+main_action_name: Stay informed
+main_action_link: *newsletter_link
 
 # Jekyll collections
 collections:
